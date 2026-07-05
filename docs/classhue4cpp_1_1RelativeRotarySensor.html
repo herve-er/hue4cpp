@@ -348,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="relative__rotary__sensor_8h_source.html#l00066">66</a> of file <a class="el" href="relative__rotary__sensor_8h_source.html">relative_rotary_sensor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="relative__rotary__sensor_8h_source.html#l00065">65</a> of file <a class="el" href="relative__rotary__sensor_8h_source.html">relative_rotary_sensor.h</a>.</p>
 
 </div>
 </div>
@@ -364,9 +364,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;RelativeRotarySensor::Action&gt;(</div>
 <div class="line">            [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _rotationAction; }</div>
-<div class="line">        }</div>
+<div class="line">        )</div>
 </div><!-- fragment -->
 <p>Rotation action associated with the last rotation event (reactive, read-only) </p>
 
@@ -385,9 +385,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;RelativeRotarySensor::Direction&gt;(</div>
 <div class="line">            [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _direction; }</div>
-<div class="line">        }</div>
+<div class="line">        )</div>
 </div><!-- fragment -->
 <p>Direction of the last rotation (reactive, read-only) </p>
 
@@ -406,9 +406,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;RelativeRotarySensor::Duration&gt;(</div>
 <div class="line">            [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _duration; }</div>
-<div class="line">        }</div>
+<div class="line">        )</div>
 </div><!-- fragment -->
 <p>Duration of the rotation event in milliseconds (reactive, read-only) </p>
 
@@ -427,9 +427,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _steps; }</div>
-<div class="line">    }</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;RelativeRotarySensor::Steps&gt;(</div>
+<div class="line">            [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _steps; }</div>
+<div class="line">        )</div>
 </div><!-- fragment -->
 <p>Number of rotation steps in the last event (reactive, read-only) </p>
 

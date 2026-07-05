@@ -136,18 +136,14 @@ $(document).ready(function(){initNavTree('light__level__sensor_8h_source.html','
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classhue4cpp_1_1LightLevelSensor.html#aec13127a3ebb68991b649889ecd731c7">initFromJson</a>(<span class="keyword">const</span> nlohmann::json&amp; json) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    /** @brief Illuminance in raw units (logarithmic scale) (reactive, read-only) */</span></div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classhue4cpp_1_1LightLevelSensor.html#af74ed6d26f405e29fde73bcfe94fbac8">   38</a></span>    ReactiveLitepp::ReadonlyProperty&lt;uint32_t&gt; <a class="code hl_variable" href="classhue4cpp_1_1LightLevelSensor.html#af74ed6d26f405e29fde73bcfe94fbac8">LightLevel</a>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classhue4cpp_1_1LightLevelSensor.html#af74ed6d26f405e29fde73bcfe94fbac8">   38</a></span>    ReactiveLitepp::ReadonlyProperty&lt;uint32_t&gt; <a class="code hl_variable" href="classhue4cpp_1_1LightLevelSensor.html#af74ed6d26f405e29fde73bcfe94fbac8">LightLevel</a> = MakeReadonlyProperty&lt;&amp;LightLevelSensor::LightLevel&gt;(</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _light_level; }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
-</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    /** @brief Whether the light level reading is valid (reactive, read-only) */</span></div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="};">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classhue4cpp_1_1LightLevelSensor.html#a18e4de90a59a6b6d50f0dadd89fae7f6">   43</a></span>    ReactiveLitepp::ReadonlyProperty&lt;bool&gt; <a class="code hl_variable" href="classhue4cpp_1_1LightLevelSensor.html#a18e4de90a59a6b6d50f0dadd89fae7f6">LightLevelValid</a>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classhue4cpp_1_1LightLevelSensor.html#a18e4de90a59a6b6d50f0dadd89fae7f6">   43</a></span>    ReactiveLitepp::ReadonlyProperty&lt;bool&gt; <a class="code hl_variable" href="classhue4cpp_1_1LightLevelSensor.html#a18e4de90a59a6b6d50f0dadd89fae7f6">LightLevelValid</a> = MakeReadonlyProperty&lt;&amp;LightLevelSensor::LightLevelValid&gt;(</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _light_level_valid; }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    };</div>
-</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    );</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    uint32_t _light_level       = 0;</div>

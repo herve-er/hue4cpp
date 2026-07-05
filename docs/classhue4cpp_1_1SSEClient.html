@@ -143,6 +143,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5df08263e49d86ea770d588a78f5d6ed" id="r_a5df08263e49d86ea770d588a78f5d6ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a5df08263e49d86ea770d588a78f5d6ed">disconnect</a> ()</td></tr>
 <tr class="memdesc:a5df08263e49d86ea770d588a78f5d6ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop listening for SSE events.  <br /></td></tr>
 <tr class="separator:a5df08263e49d86ea770d588a78f5d6ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b73edb48f8523d1b3e726ac3d2fc8b" id="r_ac1b73edb48f8523d1b3e726ac3d2fc8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#ac1b73edb48f8523d1b3e726ac3d2fc8b">parseSSELine</a> (const std::string &amp;line, <a class="el" href="structhue4cpp_1_1SSEEventArgs.html">SSEEventArgs</a> &amp;current_event)</td></tr>
+<tr class="memdesc:ac1b73edb48f8523d1b3e726ac3d2fc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse SSE stream data.  <br /></td></tr>
+<tr class="separator:ac1b73edb48f8523d1b3e726ac3d2fc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209e4fcef6656017975aed7f475a2ab7" id="r_a209e4fcef6656017975aed7f475a2ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a209e4fcef6656017975aed7f475a2ab7">connectionLoop</a> ()</td></tr>
+<tr class="separator:a209e4fcef6656017975aed7f475a2ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -152,6 +157,26 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a389709843ddb8f8eaeed0e9130b96851" id="r_a389709843ddb8f8eaeed0e9130b96851"><td class="memItemLeft" align="right" valign="top">ReactiveLitepp::ReadonlyProperty&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a389709843ddb8f8eaeed0e9130b96851">IsConnected</a></td></tr>
 <tr class="memdesc:a389709843ddb8f8eaeed0e9130b96851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only property indicating whether the client is currently connected.  <br /></td></tr>
 <tr class="separator:a389709843ddb8f8eaeed0e9130b96851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cabd3d63ec68be954f44b91415083f3" id="r_a8cabd3d63ec68be954f44b91415083f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a8cabd3d63ec68be954f44b91415083f3">_auth_header_name</a></td></tr>
+<tr class="separator:a8cabd3d63ec68be954f44b91415083f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa257993e9bfcf26d1f8e94354f23635a" id="r_aa257993e9bfcf26d1f8e94354f23635a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#aa257993e9bfcf26d1f8e94354f23635a">_auth_header_value</a></td></tr>
+<tr class="separator:aa257993e9bfcf26d1f8e94354f23635a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cd5817ed9144df2613e6398d871e77" id="r_a06cd5817ed9144df2613e6398d871e77"><td class="memItemLeft" align="right" valign="top">std::chrono::seconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a06cd5817ed9144df2613e6398d871e77">_timeout</a></td></tr>
+<tr class="separator:a06cd5817ed9144df2613e6398d871e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986fd3182aac46fc810f927611965f1c" id="r_a986fd3182aac46fc810f927611965f1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a986fd3182aac46fc810f927611965f1c">_verify_ssl</a></td></tr>
+<tr class="separator:a986fd3182aac46fc810f927611965f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffbd3dfe15dfcc159bc21e5a1bcdac2" id="r_abffbd3dfe15dfcc159bc21e5a1bcdac2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#abffbd3dfe15dfcc159bc21e5a1bcdac2">_reconnection_enabled</a></td></tr>
+<tr class="separator:abffbd3dfe15dfcc159bc21e5a1bcdac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa657d4e56e1d8a533088aa264d1b8f41" id="r_aa657d4e56e1d8a533088aa264d1b8f41"><td class="memItemLeft" align="right" valign="top">std::chrono::seconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#aa657d4e56e1d8a533088aa264d1b8f41">_reconnect_initial_delay</a></td></tr>
+<tr class="separator:aa657d4e56e1d8a533088aa264d1b8f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1048ef159fba5460ae8bc9e5430ba55a" id="r_a1048ef159fba5460ae8bc9e5430ba55a"><td class="memItemLeft" align="right" valign="top">std::chrono::seconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a1048ef159fba5460ae8bc9e5430ba55a">_reconnect_max_delay</a></td></tr>
+<tr class="separator:a1048ef159fba5460ae8bc9e5430ba55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7815af8cf6d5593f2c770c1cfae9d7" id="r_acb7815af8cf6d5593f2c770c1cfae9d7"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#acb7815af8cf6d5593f2c770c1cfae9d7">_isConnected</a></td></tr>
+<tr class="separator:acb7815af8cf6d5593f2c770c1cfae9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9245d9c49b3b78a07d046346af434c" id="r_a8d9245d9c49b3b78a07d046346af434c"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a8d9245d9c49b3b78a07d046346af434c">_should_run</a></td></tr>
+<tr class="separator:a8d9245d9c49b3b78a07d046346af434c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d0e7d1cd233dcb6928667ebf9bbd16" id="r_a68d0e7d1cd233dcb6928667ebf9bbd16"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::thread &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1SSEClient.html#a68d0e7d1cd233dcb6928667ebf9bbd16">_connection_thread</a></td></tr>
+<tr class="separator:a68d0e7d1cd233dcb6928667ebf9bbd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>SSE client for listening to Server-Sent Events. </p>
@@ -292,7 +317,30 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00049">49</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="namespacehue4cpp.html#a46a73209f107f0236824be499a5e3680ad544eb3da2f68d24cf92a8519ed53a31">hue4cpp::InvalidRequest</a>.</p>
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00129">_connection_thread</a>, <a class="el" href="sse__client_8h_source.html#l00128">_should_run</a>, <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="namespacehue4cpp.html#a46a73209f107f0236824be499a5e3680ad544eb3da2f68d24cf92a8519ed53a31">hue4cpp::InvalidRequest</a>.</p>
+
+</div>
+</div>
+<a id="a209e4fcef6656017975aed7f475a2ab7" name="a209e4fcef6656017975aed7f475a2ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209e4fcef6656017975aed7f475a2ab7">&#9670;&#160;</a></span>connectionLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hue4cpp::SSEClient::connectionLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00118">118</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00116">_auth_header_name</a>, <a class="el" href="sse__client_8h_source.html#l00117">_auth_header_value</a>, <a class="el" href="sse__client_8h_source.html#l00127">_isConnected</a>, <a class="el" href="sse__client_8h_source.html#l00123">_reconnect_initial_delay</a>, <a class="el" href="sse__client_8h_source.html#l00124">_reconnect_max_delay</a>, <a class="el" href="sse__client_8h_source.html#l00122">_reconnection_enabled</a>, <a class="el" href="sse__client_8h_source.html#l00128">_should_run</a>, <a class="el" href="sse__client_8h_source.html#l00118">_timeout</a>, <a class="el" href="sse__client_8h_source.html#l00119">_verify_ssl</a>, <a class="el" href="sse__client_8h_source.html#l00094">OnEvent</a>, and <a class="el" href="sse__client_8cpp_source.html#l00078">parseSSELine()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00049">connect()</a>.</p>
 
 </div>
 </div>
@@ -314,6 +362,8 @@ Public Attributes</h2></td></tr>
 <p>Stop listening for SSE events. </p>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00062">62</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00129">_connection_thread</a>, <a class="el" href="sse__client_8h_source.html#l00127">_isConnected</a>, and <a class="el" href="sse__client_8h_source.html#l00128">_should_run</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00026">~SSEClient()</a>.</p>
 
@@ -371,6 +421,50 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac1b73edb48f8523d1b3e726ac3d2fc8b" name="ac1b73edb48f8523d1b3e726ac3d2fc8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b73edb48f8523d1b3e726ac3d2fc8b">&#9670;&#160;</a></span>parseSSELine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hue4cpp::SSEClient::parseSSELine </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structhue4cpp_1_1SSEEventArgs.html">SSEEventArgs</a> &amp;&#160;</td>
+          <td class="paramname"><em>current_event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parse SSE stream data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Line from SSE stream </td></tr>
+    <tr><td class="paramname">current_event</td><td>Current event being built </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if event is complete, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00078">78</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00025">hue4cpp::SSEEventArgs::data</a>, <a class="el" href="sse__client_8h_source.html#l00024">hue4cpp::SSEEventArgs::event_type</a>, and <a class="el" href="sse__client_8h_source.html#l00026">hue4cpp::SSEEventArgs::id</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>.</p>
+
+</div>
+</div>
 <a id="ad61a3b151b0949885df54233696b5ea2" name="ad61a3b151b0949885df54233696b5ea2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad61a3b151b0949885df54233696b5ea2">&#9670;&#160;</a></span>setAuthHeader()</h2>
 
@@ -407,6 +501,8 @@ Public Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00030">30</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00116">_auth_header_name</a>, and <a class="el" href="sse__client_8h_source.html#l00117">_auth_header_value</a>.</p>
 
 </div>
 </div>
@@ -454,6 +550,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00043">43</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
 
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00123">_reconnect_initial_delay</a>, <a class="el" href="sse__client_8h_source.html#l00124">_reconnect_max_delay</a>, and <a class="el" href="sse__client_8h_source.html#l00122">_reconnection_enabled</a>.</p>
+
 </div>
 </div>
 <a id="ac2c9dbf9f683f82520d63a41378fc8e5" name="ac2c9dbf9f683f82520d63a41378fc8e5"></a>
@@ -481,6 +579,8 @@ Public Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00035">35</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00118">_timeout</a>.</p>
 
 </div>
 </div>
@@ -510,9 +610,191 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8cpp_source.html#l00039">39</a> of file <a class="el" href="sse__client_8cpp_source.html">sse_client.cpp</a>.</p>
 
+<p class="reference">References <a class="el" href="sse__client_8h_source.html#l00119">_verify_ssl</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8cabd3d63ec68be954f44b91415083f3" name="a8cabd3d63ec68be954f44b91415083f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cabd3d63ec68be954f44b91415083f3">&#9670;&#160;</a></span>_auth_header_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string hue4cpp::SSEClient::_auth_header_name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00116">116</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00030">setAuthHeader()</a>.</p>
+
+</div>
+</div>
+<a id="aa257993e9bfcf26d1f8e94354f23635a" name="aa257993e9bfcf26d1f8e94354f23635a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa257993e9bfcf26d1f8e94354f23635a">&#9670;&#160;</a></span>_auth_header_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string hue4cpp::SSEClient::_auth_header_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00117">117</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00030">setAuthHeader()</a>.</p>
+
+</div>
+</div>
+<a id="a68d0e7d1cd233dcb6928667ebf9bbd16" name="a68d0e7d1cd233dcb6928667ebf9bbd16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d0e7d1cd233dcb6928667ebf9bbd16">&#9670;&#160;</a></span>_connection_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;std::thread&gt; hue4cpp::SSEClient::_connection_thread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00129">129</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00049">connect()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00062">disconnect()</a>.</p>
+
+</div>
+</div>
+<a id="acb7815af8cf6d5593f2c770c1cfae9d7" name="acb7815af8cf6d5593f2c770c1cfae9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7815af8cf6d5593f2c770c1cfae9d7">&#9670;&#160;</a></span>_isConnected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; hue4cpp::SSEClient::_isConnected</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00127">127</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00062">disconnect()</a>.</p>
+
+</div>
+</div>
+<a id="aa657d4e56e1d8a533088aa264d1b8f41" name="aa657d4e56e1d8a533088aa264d1b8f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa657d4e56e1d8a533088aa264d1b8f41">&#9670;&#160;</a></span>_reconnect_initial_delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::seconds hue4cpp::SSEClient::_reconnect_initial_delay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00123">123</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00043">setReconnection()</a>.</p>
+
+</div>
+</div>
+<a id="a1048ef159fba5460ae8bc9e5430ba55a" name="a1048ef159fba5460ae8bc9e5430ba55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1048ef159fba5460ae8bc9e5430ba55a">&#9670;&#160;</a></span>_reconnect_max_delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::seconds hue4cpp::SSEClient::_reconnect_max_delay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00124">124</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00043">setReconnection()</a>.</p>
+
+</div>
+</div>
+<a id="abffbd3dfe15dfcc159bc21e5a1bcdac2" name="abffbd3dfe15dfcc159bc21e5a1bcdac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffbd3dfe15dfcc159bc21e5a1bcdac2">&#9670;&#160;</a></span>_reconnection_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hue4cpp::SSEClient::_reconnection_enabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00122">122</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00043">setReconnection()</a>.</p>
+
+</div>
+</div>
+<a id="a8d9245d9c49b3b78a07d046346af434c" name="a8d9245d9c49b3b78a07d046346af434c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9245d9c49b3b78a07d046346af434c">&#9670;&#160;</a></span>_should_run</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; hue4cpp::SSEClient::_should_run</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00128">128</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00049">connect()</a>, <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00062">disconnect()</a>.</p>
+
+</div>
+</div>
+<a id="a06cd5817ed9144df2613e6398d871e77" name="a06cd5817ed9144df2613e6398d871e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06cd5817ed9144df2613e6398d871e77">&#9670;&#160;</a></span>_timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::seconds hue4cpp::SSEClient::_timeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00118">118</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00035">setTimeout()</a>.</p>
+
+</div>
+</div>
+<a id="a986fd3182aac46fc810f927611965f1c" name="a986fd3182aac46fc810f927611965f1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986fd3182aac46fc810f927611965f1c">&#9670;&#160;</a></span>_verify_ssl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hue4cpp::SSEClient::_verify_ssl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00119">119</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>, and <a class="el" href="sse__client_8cpp_source.html#l00039">setVerifySsl()</a>.</p>
+
+</div>
+</div>
 <a id="a389709843ddb8f8eaeed0e9130b96851" name="a389709843ddb8f8eaeed0e9130b96851"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a389709843ddb8f8eaeed0e9130b96851">&#9670;&#160;</a></span>IsConnected</h2>
 
@@ -524,9 +806,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _isConnected.load(); }</div>
-<div class="line">    }</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;SSEClient::IsConnected&gt;(</div>
+<div class="line">        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classhue4cpp_1_1SSEClient.html#acb7815af8cf6d5593f2c770c1cfae9d7">_isConnected</a>.load(); }</div>
+<div class="line">    )</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    std::string _url</div>
+<div class="ttc" id="aclasshue4cpp_1_1SSEClient_html_acb7815af8cf6d5593f2c770c1cfae9d7"><div class="ttname"><a href="classhue4cpp_1_1SSEClient.html#acb7815af8cf6d5593f2c770c1cfae9d7">hue4cpp::SSEClient::_isConnected</a></div><div class="ttdeci">std::atomic&lt; bool &gt; _isConnected</div><div class="ttdef"><b>Definition</b> <a href="sse__client_8h_source.html#l00127">sse_client.h:127</a></div></div>
 </div><!-- fragment -->
 <p>Read-only property indicating whether the client is currently connected. </p>
 
@@ -549,6 +835,8 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="structhue4cpp_1_1Event.html" title="Event data structure.">Event</a> fired when an SSE event is received. </p>
 
 <p class="definition">Definition at line <a class="el" href="sse__client_8h_source.html#l00094">94</a> of file <a class="el" href="sse__client_8h_source.html">sse_client.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sse__client_8cpp_source.html#l00118">connectionLoop()</a>.</p>
 
 </div>
 </div>

@@ -24,6 +24,6 @@ var searchData=
   ['button_5fsensor_2ecpp_21',['button_sensor.cpp',['../button__sensor_8cpp.html',1,'']]],
   ['button_5fsensor_2eh_22',['button_sensor.h',['../button__sensor_8h.html',1,'']]],
   ['buttonevent_23',['ButtonEvent',['../namespacehue4cpp.html#a0ecc80e2f206fdef7c207b36f31aeffc',1,'hue4cpp']]],
-  ['buttonid_24',['ButtonId',['../classhue4cpp_1_1ButtonSensor.html#a740270511ea11706b73ef78b8a7c67e1',1,'hue4cpp::ButtonSensor']]],
+  ['buttonid_24',['ButtonId',['../classhue4cpp_1_1ButtonSensor.html#a13bb779fa08bc66595d6dbcf164fce3c',1,'hue4cpp::ButtonSensor']]],
   ['buttonsensor_25',['buttonsensor',['../classhue4cpp_1_1ButtonSensor.html',1,'hue4cpp::ButtonSensor'],['../classhue4cpp_1_1ButtonSensor.html#a2f176023826d6fe45a8438a8636a8b0e',1,'hue4cpp::ButtonSensor::ButtonSensor()']]]
 ];

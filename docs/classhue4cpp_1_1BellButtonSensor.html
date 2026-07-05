@@ -151,12 +151,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acb5ab19de3fc8096635fc168f779987d" id="r_acb5ab19de3fc8096635fc168f779987d"><td class="memItemLeft" align="right" valign="top">ReactiveLitepp::ReadonlyProperty&lt; <a class="el" href="namespacehue4cpp.html#a0ecc80e2f206fdef7c207b36f31aeffc">ButtonEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1BellButtonSensor.html#acb5ab19de3fc8096635fc168f779987d">LastEvent</a></td></tr>
-<tr class="memdesc:acb5ab19de3fc8096635fc168f779987d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last doorbell button event (reactive, read-only)  <br /></td></tr>
-<tr class="separator:acb5ab19de3fc8096635fc168f779987d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72689a8197ebd983e59b6989a992514a" id="r_a72689a8197ebd983e59b6989a992514a"><td class="memItemLeft" align="right" valign="top">ReactiveLitepp::ReadonlyProperty&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1BellButtonSensor.html#a72689a8197ebd983e59b6989a992514a">EventSequence</a></td></tr>
-<tr class="memdesc:a72689a8197ebd983e59b6989a992514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotonically increasing event counter (reactive, read-only)  <br /></td></tr>
-<tr class="separator:a72689a8197ebd983e59b6989a992514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fdf913aeb30242253f9f1209ecb2572" id="r_a3fdf913aeb30242253f9f1209ecb2572"><td class="memItemLeft" align="right" valign="top">ReadonlyProperty&lt; <a class="el" href="namespacehue4cpp.html#a0ecc80e2f206fdef7c207b36f31aeffc">ButtonEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1BellButtonSensor.html#a3fdf913aeb30242253f9f1209ecb2572">LastEvent</a></td></tr>
+<tr class="memdesc:a3fdf913aeb30242253f9f1209ecb2572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last doorbell button event (reactive, read-only)  <br /></td></tr>
+<tr class="separator:a3fdf913aeb30242253f9f1209ecb2572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff507d0432f5344edde9b016f957c565" id="r_aff507d0432f5344edde9b016f957c565"><td class="memItemLeft" align="right" valign="top">ReadonlyProperty&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1BellButtonSensor.html#aff507d0432f5344edde9b016f957c565">EventSequence</a></td></tr>
+<tr class="memdesc:aff507d0432f5344edde9b016f957c565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotonically increasing event counter (reactive, read-only)  <br /></td></tr>
+<tr class="separator:aff507d0432f5344edde9b016f957c565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3256892a90be419d8f16f693c9e8cb4" id="r_aa3256892a90be419d8f16f693c9e8cb4"><td class="memItemLeft" align="right" valign="top">ReactiveLitepp::Event&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhue4cpp_1_1BellButtonSensor.html#aa3256892a90be419d8f16f693c9e8cb4">Pressed</a></td></tr>
 <tr class="memdesc:aa3256892a90be419d8f16f693c9e8cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Events fired for each button event type.  <br /></td></tr>
 <tr class="separator:aa3256892a90be419d8f16f693c9e8cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,20 +355,20 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a72689a8197ebd983e59b6989a992514a" name="a72689a8197ebd983e59b6989a992514a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72689a8197ebd983e59b6989a992514a">&#9670;&#160;</a></span>EventSequence</h2>
+<a id="aff507d0432f5344edde9b016f957c565" name="aff507d0432f5344edde9b016f957c565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff507d0432f5344edde9b016f957c565">&#9670;&#160;</a></span>EventSequence</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ReactiveLitepp::ReadonlyProperty&lt;uint32_t&gt; hue4cpp::BellButtonSensor::EventSequence</td>
+          <td class="memname">ReadonlyProperty&lt;uint32_t&gt; hue4cpp::BellButtonSensor::EventSequence</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;BellButtonSensor::EventSequence&gt;(</div>
 <div class="line">        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _event_sequence; }</div>
-<div class="line">    }</div>
+<div class="line">    )</div>
 </div><!-- fragment -->
 <p>Monotonically increasing event counter (reactive, read-only) </p>
 
@@ -376,20 +376,20 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acb5ab19de3fc8096635fc168f779987d" name="acb5ab19de3fc8096635fc168f779987d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb5ab19de3fc8096635fc168f779987d">&#9670;&#160;</a></span>LastEvent</h2>
+<a id="a3fdf913aeb30242253f9f1209ecb2572" name="a3fdf913aeb30242253f9f1209ecb2572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fdf913aeb30242253f9f1209ecb2572">&#9670;&#160;</a></span>LastEvent</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ReactiveLitepp::ReadonlyProperty&lt;<a class="el" href="namespacehue4cpp.html#a0ecc80e2f206fdef7c207b36f31aeffc">ButtonEvent</a>&gt; hue4cpp::BellButtonSensor::LastEvent</td>
+          <td class="memname">ReadonlyProperty&lt;<a class="el" href="namespacehue4cpp.html#a0ecc80e2f206fdef7c207b36f31aeffc">ButtonEvent</a>&gt; hue4cpp::BellButtonSensor::LastEvent</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= MakeReadonlyProperty&lt;&amp;BellButtonSensor::LastEvent&gt;(</div>
 <div class="line">        [<span class="keyword">this</span>]() { <span class="keywordflow">return</span> _last_event; }</div>
-<div class="line">    }</div>
+<div class="line">    )</div>
 </div><!-- fragment -->
 <p>Last doorbell button event (reactive, read-only) </p>
 

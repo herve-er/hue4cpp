@@ -4,7 +4,8 @@ var searchData=
   ['clearcache_1',['clearCache',['../classhue4cpp_1_1StateManager.html#ae182f089b1c31c3dead424e56ff49c8d',1,'hue4cpp::StateManager']]],
   ['colortemperature_2',['ColorTemperature',['../structhue4cpp_1_1ColorTemperature.html#af33d05a21599561b75d7a3aa0b80ce79',1,'hue4cpp::ColorTemperature']]],
   ['connect_3',['connect',['../classhue4cpp_1_1SSEClient.html#abc83d44fec538e82d41c1cf5810b88d7',1,'hue4cpp::SSEClient']]],
-  ['createcolormap_4',['createColorMap',['../namespacehue4cpp_1_1colors.html#aa07bbcd750fd53cd6625fb3c5e313921',1,'hue4cpp::colors']]],
-  ['createobject_5',['createObject',['../namespacehue4cpp_1_1json__utils.html#a67bcc54b133f01adbfa4bf9422860085',1,'hue4cpp::json_utils']]],
-  ['createsensorfromjson_6',['createSensorFromJson',['../namespacehue4cpp.html#a0c64322f11c733d2a49828266ed958ed',1,'hue4cpp']]]
+  ['connectionloop_4',['connectionLoop',['../classhue4cpp_1_1SSEClient.html#a209e4fcef6656017975aed7f475a2ab7',1,'hue4cpp::SSEClient']]],
+  ['createcolormap_5',['createColorMap',['../namespacehue4cpp_1_1colors.html#aa07bbcd750fd53cd6625fb3c5e313921',1,'hue4cpp::colors']]],
+  ['createobject_6',['createObject',['../namespacehue4cpp_1_1json__utils.html#a67bcc54b133f01adbfa4bf9422860085',1,'hue4cpp::json_utils']]],
+  ['createsensorfromjson_7',['createSensorFromJson',['../namespacehue4cpp.html#a0c64322f11c733d2a49828266ed958ed',1,'hue4cpp']]]
 ];

@@ -16,11 +16,12 @@ var searchData=
   ['colortemperature_13',['colortemperature',['../structhue4cpp_1_1ColorTemperature.html',1,'hue4cpp::ColorTemperature'],['../structhue4cpp_1_1ColorTemperature.html#af33d05a21599561b75d7a3aa0b80ce79',1,'hue4cpp::ColorTemperature::ColorTemperature()']]],
   ['colortemperature_5f_14',['ColorTemperature_',['../classhue4cpp_1_1Light.html#a8d83f3e6178cf3a615ebfe6d87e9e32d',1,'hue4cpp::Light']]],
   ['connect_15',['connect',['../classhue4cpp_1_1SSEClient.html#abc83d44fec538e82d41c1cf5810b88d7',1,'hue4cpp::SSEClient']]],
-  ['contributing_16',['Contributing',['../index.html#autotoc_md18',1,'']]],
-  ['coolwhite_17',['CoolWhite',['../namespacehue4cpp_1_1colors.html#aba6da866948962b7dc1723b68ec800b0',1,'hue4cpp::colors']]],
-  ['counterclockwise_18',['CounterClockWise',['../namespacehue4cpp.html#afd74b442f5952dc07afcac704785d333a5a8821d3fbf32174429e2b28bc3b031b',1,'hue4cpp']]],
-  ['createcolormap_19',['createColorMap',['../namespacehue4cpp_1_1colors.html#aa07bbcd750fd53cd6625fb3c5e313921',1,'hue4cpp::colors']]],
-  ['createobject_20',['createObject',['../namespacehue4cpp_1_1json__utils.html#a67bcc54b133f01adbfa4bf9422860085',1,'hue4cpp::json_utils']]],
-  ['createsensorfromjson_21',['createSensorFromJson',['../namespacehue4cpp.html#a0c64322f11c733d2a49828266ed958ed',1,'hue4cpp']]],
-  ['cyan_22',['Cyan',['../namespacehue4cpp_1_1colors.html#acacccfcd3e2acac0cf8e82322624b7cf',1,'hue4cpp::colors']]]
+  ['connectionloop_16',['connectionLoop',['../classhue4cpp_1_1SSEClient.html#a209e4fcef6656017975aed7f475a2ab7',1,'hue4cpp::SSEClient']]],
+  ['contributing_17',['Contributing',['../index.html#autotoc_md18',1,'']]],
+  ['coolwhite_18',['CoolWhite',['../namespacehue4cpp_1_1colors.html#aba6da866948962b7dc1723b68ec800b0',1,'hue4cpp::colors']]],
+  ['counterclockwise_19',['CounterClockWise',['../namespacehue4cpp.html#afd74b442f5952dc07afcac704785d333a5a8821d3fbf32174429e2b28bc3b031b',1,'hue4cpp']]],
+  ['createcolormap_20',['createColorMap',['../namespacehue4cpp_1_1colors.html#aa07bbcd750fd53cd6625fb3c5e313921',1,'hue4cpp::colors']]],
+  ['createobject_21',['createObject',['../namespacehue4cpp_1_1json__utils.html#a67bcc54b133f01adbfa4bf9422860085',1,'hue4cpp::json_utils']]],
+  ['createsensorfromjson_22',['createSensorFromJson',['../namespacehue4cpp.html#a0c64322f11c733d2a49828266ed958ed',1,'hue4cpp']]],
+  ['cyan_23',['Cyan',['../namespacehue4cpp_1_1colors.html#acacccfcd3e2acac0cf8e82322624b7cf',1,'hue4cpp::colors']]]
 ];

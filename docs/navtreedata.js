@@ -85,8 +85,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classhue4cpp_1_1InvalidParameterException.html#adf15dd4fd839864c495aff7c58414b93",
-"classhue4cpp_1_1TimeoutException.html",
-"relative__rotary__sensor_8h_source.html"
+"classhue4cpp_1_1TamperSensor.html#a4ccd55638d78e481954d917c00e510b9",
+"namespacehue4cpp_1_1colors.html#aba6da866948962b7dc1723b68ec800b0",
+"types_8h.html#a735a4f15dfb3f6e12a6d1bfd4b3f43f5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['_5fbridge_0',['_bridge',['../classhue4cpp_1_1Sensor.html#afeb77fe1d070e9a2fc321998148be241',1,'hue4cpp::Sensor']]],
-  ['_5fenabled_1',['_enabled',['../classhue4cpp_1_1Sensor.html#a29fb53c3e1511e19ee69c6d2fca9ca45',1,'hue4cpp::Sensor']]],
-  ['_5fid_2',['_id',['../classhue4cpp_1_1Sensor.html#a09c01999769e1aa83212786bdb553e89',1,'hue4cpp::Sensor']]],
-  ['_5fname_3',['_name',['../classhue4cpp_1_1Sensor.html#a1852d6a4f77cd66e902259e3a7735f20',1,'hue4cpp::Sensor']]],
-  ['_5fownerid_4',['_ownerId',['../classhue4cpp_1_1Sensor.html#a51a878899c6446f99e4ce36315ad7086',1,'hue4cpp::Sensor']]],
-  ['_5ftype_5',['_type',['../classhue4cpp_1_1Sensor.html#a112a1a87e0a260a647717b5b8123f0a6',1,'hue4cpp::Sensor']]]
+  ['_5fauth_5fheader_5fname_0',['_auth_header_name',['../classhue4cpp_1_1SSEClient.html#a8cabd3d63ec68be954f44b91415083f3',1,'hue4cpp::SSEClient']]],
+  ['_5fauth_5fheader_5fvalue_1',['_auth_header_value',['../classhue4cpp_1_1SSEClient.html#aa257993e9bfcf26d1f8e94354f23635a',1,'hue4cpp::SSEClient']]],
+  ['_5fbridge_2',['_bridge',['../classhue4cpp_1_1Sensor.html#afeb77fe1d070e9a2fc321998148be241',1,'hue4cpp::Sensor']]],
+  ['_5fconnection_5fthread_3',['_connection_thread',['../classhue4cpp_1_1SSEClient.html#a68d0e7d1cd233dcb6928667ebf9bbd16',1,'hue4cpp::SSEClient']]],
+  ['_5fenabled_4',['_enabled',['../classhue4cpp_1_1Sensor.html#a29fb53c3e1511e19ee69c6d2fca9ca45',1,'hue4cpp::Sensor']]],
+  ['_5fid_5',['_id',['../classhue4cpp_1_1Sensor.html#a09c01999769e1aa83212786bdb553e89',1,'hue4cpp::Sensor']]],
+  ['_5fisconnected_6',['_isConnected',['../classhue4cpp_1_1SSEClient.html#acb7815af8cf6d5593f2c770c1cfae9d7',1,'hue4cpp::SSEClient']]],
+  ['_5fname_7',['_name',['../classhue4cpp_1_1Sensor.html#a1852d6a4f77cd66e902259e3a7735f20',1,'hue4cpp::Sensor']]],
+  ['_5fownerid_8',['_ownerId',['../classhue4cpp_1_1Sensor.html#a51a878899c6446f99e4ce36315ad7086',1,'hue4cpp::Sensor']]],
+  ['_5freconnect_5finitial_5fdelay_9',['_reconnect_initial_delay',['../classhue4cpp_1_1SSEClient.html#aa657d4e56e1d8a533088aa264d1b8f41',1,'hue4cpp::SSEClient']]],
+  ['_5freconnect_5fmax_5fdelay_10',['_reconnect_max_delay',['../classhue4cpp_1_1SSEClient.html#a1048ef159fba5460ae8bc9e5430ba55a',1,'hue4cpp::SSEClient']]],
+  ['_5freconnection_5fenabled_11',['_reconnection_enabled',['../classhue4cpp_1_1SSEClient.html#abffbd3dfe15dfcc159bc21e5a1bcdac2',1,'hue4cpp::SSEClient']]],
+  ['_5fshould_5frun_12',['_should_run',['../classhue4cpp_1_1SSEClient.html#a8d9245d9c49b3b78a07d046346af434c',1,'hue4cpp::SSEClient']]],
+  ['_5ftimeout_13',['_timeout',['../classhue4cpp_1_1SSEClient.html#a06cd5817ed9144df2613e6398d871e77',1,'hue4cpp::SSEClient']]],
+  ['_5ftype_14',['_type',['../classhue4cpp_1_1Sensor.html#a112a1a87e0a260a647717b5b8123f0a6',1,'hue4cpp::Sensor']]],
+  ['_5fverify_5fssl_15',['_verify_ssl',['../classhue4cpp_1_1SSEClient.html#a986fd3182aac46fc810f927611965f1c',1,'hue4cpp::SSEClient']]]
 ];
