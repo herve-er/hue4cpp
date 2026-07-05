@@ -28,32 +28,31 @@ namespace hue4cpp {
 		 */
 		SensorType getType() const override;
 
-    /**
-     * @brief Initialize relative rotary sensor state from JSON data
-     * @param json JSON object containing sensor data from API
-     */
-    void initFromJson(const nlohmann::json& json) override;
+		/**
+		 * @brief Initialize relative rotary sensor state from JSON data
+		 * @param json JSON object containing sensor data from API
+		 */
+		void initFromJson(const nlohmann::json& json) override;
 
-    /** @brief Number of rotation steps in the last event (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<int32_t> Steps{
-        [this]() { return _steps; }
-    };
+		/** @brief Number of rotation steps in the last event (reactive, read-only) */
+		ReactiveLitepp::ReadonlyProperty<int32_t> Steps = MakeReadonlyProperty<&RelativeRotarySensor::Steps>(
+			[this]() { return _steps; }
+		);
 
 		/** @brief Direction of the last rotation (reactive, read-only) */
-		ReactiveLitepp::ReadonlyProperty<RotationDirection> Direction{
+		ReactiveLitepp::ReadonlyProperty<RotationDirection> Direction = MakeReadonlyProperty<&RelativeRotarySensor::Direction>(
 			[this]() { return _direction; }
-		};
+		);
 
 		/** @brief Rotation action associated with the last rotation event (reactive, read-only) */
-		ReactiveLitepp::ReadonlyProperty<RotationAction> Action{
+		ReactiveLitepp::ReadonlyProperty<RotationAction> Action = MakeReadonlyProperty<&RelativeRotarySensor::Action>(
 			[this]() { return _rotationAction; }
-		};
+		);
 
 		/** @brief Duration of the rotation event in milliseconds (reactive, read-only) */
-		ReactiveLitepp::ReadonlyProperty<int32_t> Duration{
+		ReactiveLitepp::ReadonlyProperty<int32_t> Duration = MakeReadonlyProperty<&RelativeRotarySensor::Duration>(
 			[this]() { return _duration; }
-		};
-
+		);
 
 	private:
 		int32_t           _steps = 0;

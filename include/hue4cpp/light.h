@@ -60,21 +60,21 @@ namespace hue4cpp {
 		 * @brief Get the light's unique identifier
 		 * @return Light ID
 		 */
-		ReadonlyProperty<std::string> Id{
+		ReadonlyProperty<std::string> Id = MakeReadonlyProperty<&Light::Id>(
 			[this]() {
-					return _id;
+				return _id;
 			}
-		};
+		);
 
 		/**
 		 * @brief Get the light's owner identifier
 		 * @return Owner ID
 		 */
-		ReadonlyProperty<std::string> OwnerId{
+		ReadonlyProperty<std::string> OwnerId = MakeReadonlyProperty<&Light::OwnerId>(
 			[this]() {
-					return _ownerId;
+				return _ownerId;
 			}
-		};
+		);
 
 		/**
 		 * @brief Get or set the light's display name
@@ -86,7 +86,7 @@ namespace hue4cpp {
 		 * @throws BridgeNotReachableException if the bridge is not available
 		 * @throws AuthenticationException if not authenticated
 		 */
-		Property<std::string> Name{
+		Property<std::string> Name = MakeProperty<&Light::Name>(
 			[this]() { return _name; },
 			[this](std::string& value) {
 				try {
@@ -96,7 +96,7 @@ namespace hue4cpp {
 				}
 				catch (const HueException&) { throw; }
 			}
-		};
+		);
 
 		/**
 		 * @brief Get the light's capabilities
@@ -124,13 +124,12 @@ namespace hue4cpp {
 		* @return Transition time in milliseconds
 		 * @note This property does not affect the current state but will be used for subsequent operations
 		*/
-		Property<TransitionTime> TransitionTime_
-		{
+		Property<TransitionTime> TransitionTime_ = MakeProperty<&Light::TransitionTime_>(
 			[this]() { return _transitionTime; },
 			[this](TransitionTime& value) {
 				SetPropertyValueAndNotify<&Light::TransitionTime_>(_transitionTime, value);
 			}
-		};
+		);
 
 		/**
 		 * @brief Get or set the on/off state
@@ -139,13 +138,13 @@ namespace hue4cpp {
 		 * @throws AuthenticationException if not authenticated
 		 * @throws ResourceNotFoundException if state is not available
 		 */
-		Property<bool> IsOn{
+		Property<bool> IsOn = MakeProperty<&Light::IsOn>(
 			[this]() {
 				try {
 					return isOn();
 				}
 				catch (const HueException&) {
-				    throw;
+					throw;
 				}
 			},
 			[this](bool& value) {
@@ -155,10 +154,10 @@ namespace hue4cpp {
 					// NotifyPropertyChanged call when the sse event is received
 				}
 				catch (const HueException&) {
-				    throw;
+					throw;
 				}
 			}
-		};
+		);
 
 		/**
 		 * @brief Get or set the brightness level
@@ -167,7 +166,7 @@ namespace hue4cpp {
 		 * @throws BridgeNotReachableException if bridge is not available
 		 * @throws AuthenticationException if not authenticated
 		 */
-		Property<uint8_t> Brightness{
+		Property<uint8_t> Brightness = MakeProperty<&Light::Brightness>(
 			[this]() {
 				try {
 					return getBrightness();
@@ -186,7 +185,7 @@ namespace hue4cpp {
 					throw;
 				}
 			}
-		};
+		);
 
 		/**
 		 * @brief Get or set the color in XY color space
@@ -195,7 +194,7 @@ namespace hue4cpp {
 		 * @throws BridgeNotReachableException if bridge is not available
 		 * @throws AuthenticationException if not authenticated
 		 */
-		Property<XYColor> XYColor_{
+		Property<XYColor> XYColor_ = MakeProperty<&Light::XYColor_>(
 			[this]() {
 				try {
 					return getColor();
@@ -207,14 +206,14 @@ namespace hue4cpp {
 			[this](XYColor& value) {
 				try {
 					NotifyPropertyChanging<&Light::XYColor_>();
-					setColor(value);					
+					setColor(value);
 					// NotifyPropertyChanged call when the sse event is received
 				}
 				catch (const HueException&) {
 					throw;
 				}
 			}
-		};
+		);
 
 		/**
 		 * @brief Get or set the color in RGB color space
@@ -223,7 +222,7 @@ namespace hue4cpp {
 		 * @throws BridgeNotReachableException if bridge is not available
 		 * @throws AuthenticationException if not authenticated
 		 */
-		Property<RGBColor> RGBColor_{
+		Property<RGBColor> RGBColor_ = MakeProperty<&Light::RGBColor_>(
 			[this]() {
 				try {
 					return color_utils::xyToRgb(getColor());
@@ -242,7 +241,7 @@ namespace hue4cpp {
 					throw;
 				}
 			}
-		};
+		);
 
 		/**
 		 * @brief Get or set the color temperature
@@ -251,7 +250,7 @@ namespace hue4cpp {
 		 * @throws BridgeNotReachableException if bridge is not available
 		 * @throws AuthenticationException if not authenticated
 		 */
-		Property<ColorTemperature> ColorTemperature_{
+		Property<ColorTemperature> ColorTemperature_ = MakeProperty<&Light::ColorTemperature_>(
 			[this]() {
 				try {
 					return getColorTemperature();
@@ -270,7 +269,7 @@ namespace hue4cpp {
 					throw;
 				}
 			}
-		};
+		);
 
 	private:
 		// Control methods - called from properties

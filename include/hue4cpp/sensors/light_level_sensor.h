@@ -35,14 +35,14 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Illuminance in raw units (logarithmic scale) (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<uint32_t> LightLevel{
+	ReactiveLitepp::ReadonlyProperty<uint32_t> LightLevel = MakeReadonlyProperty<&LightLevelSensor::LightLevel>(
         [this]() { return _light_level; }
-    };
+    );
 
     /** @brief Whether the light level reading is valid (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> LightLevelValid{
+    ReactiveLitepp::ReadonlyProperty<bool> LightLevelValid = MakeReadonlyProperty<&LightLevelSensor::LightLevelValid>(
         [this]() { return _light_level_valid; }
-    };
+    );
 
 private:
     uint32_t _light_level       = 0;

@@ -9,7 +9,7 @@
  */
 
 namespace hue4cpp {
-
+	using namespace ReactiveLitepp;
 /**
  * @brief Represents a bell button sensor (doorbell)
  * 
@@ -38,19 +38,19 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Last doorbell button event (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<ButtonEvent> LastEvent{
+	ReadonlyProperty<ButtonEvent> LastEvent = MakeReadonlyProperty<&BellButtonSensor::LastEvent>(
         [this]() { return _last_event; }
-    };
+    );
 
     /** @brief Monotonically increasing event counter (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<uint32_t> EventSequence{
+	ReadonlyProperty<uint32_t> EventSequence = MakeReadonlyProperty<&BellButtonSensor::EventSequence>(
         [this]() { return _event_sequence; }
-    };
+    );
 
     /** @brief Events fired for each button event type */
     ReactiveLitepp::Event<> Pressed;
-	ReactiveLitepp::Event<> Repeated;
-	ReactiveLitepp::Event<> Released;
+    ReactiveLitepp::Event<> Repeated;
+    ReactiveLitepp::Event<> Released;
 
 private:
     ButtonEvent _last_event     = ButtonEvent::Unknown;

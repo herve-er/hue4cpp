@@ -38,9 +38,9 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Whether geofencing has been configured on the bridge (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> IsConfigured{
+    ReactiveLitepp::ReadonlyProperty<bool> IsConfigured = MakeReadonlyProperty<&GeolocationSensor::IsConfigured>(
         [this]() { return _is_configured; }
-    };
+    );
 
 private:
     bool _is_configured = false;

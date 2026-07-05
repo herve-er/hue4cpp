@@ -26,14 +26,14 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Whether physical tampering has been detected (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> Tampered{
+    ReactiveLitepp::ReadonlyProperty<bool> Tampered = MakeReadonlyProperty<&TamperSensor::Tampered>(
         [this]() { return _tampered; }
-    };
+    );
 
     /** @brief Whether the tamper reading is valid (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> TamperValid{
+    ReactiveLitepp::ReadonlyProperty<bool> TamperValid = MakeReadonlyProperty<&TamperSensor::TamperValid>(
         [this]() { return _tamper_valid; }
-    };
+    );
 
 private:
     bool _tampered     = false;

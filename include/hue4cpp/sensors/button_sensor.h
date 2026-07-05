@@ -9,7 +9,7 @@
  */
 
 namespace hue4cpp {
-
+	using namespace ReactiveLitepp;
 /**
  * @brief Represents a button sensor (dimmer switch, tap dial, etc.)
  * 
@@ -38,19 +38,19 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Last button event (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<ButtonEvent> LastEvent{
+    ReadonlyProperty<ButtonEvent> LastEvent = MakeReadonlyProperty<&ButtonSensor::LastEvent>(
         [this]() { return _last_event; }
-    };
+    );
 
     /** @brief Button control ID on multi-button devices (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<uint32_t> ButtonId{
+	ReadonlyProperty<uint32_t> ButtonId = MakeReadonlyProperty<&ButtonSensor::ButtonId>(
         [this]() { return _button_id; }
-    };
+    );
 
     /** @brief Monotonically increasing event counter (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<uint32_t> EventSequence{
+    ReadonlyProperty<uint32_t> EventSequence = MakeReadonlyProperty<&ButtonSensor::EventSequence>(
         [this]() { return _event_sequence; }
-    };
+    );
 
 	/** @brief Events fired for each button event type */
     ReactiveLitepp::Event<> Pressed;

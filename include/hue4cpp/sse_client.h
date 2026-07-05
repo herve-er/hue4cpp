@@ -107,9 +107,9 @@ public:
     /**
      * @brief Read-only property indicating whether the client is currently connected
      */
-    ReactiveLitepp::ReadonlyProperty<bool> IsConnected{
+    ReactiveLitepp::ReadonlyProperty<bool> IsConnected = MakeReadonlyProperty<&SSEClient::IsConnected>(
         [this]() { return _isConnected.load(); }
-    };
+    )
 
 private:
     std::string _url;

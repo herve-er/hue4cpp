@@ -1,7 +1,7 @@
 {
   "default-registry": {
     "kind": "git",
-    "baseline": "05442024c3fda64320bd25d2251cc9807b84fb6f",
+    "baseline": "cd61e1e26a038e82d6550a3ebbe0fbbfe7da78e3",
     "repository": "https://github.com/microsoft/vcpkg"
   },
   "registries": [
@@ -13,7 +13,7 @@
     {
       "kind": "git",
       "repository": "https://github.com/herve-er/vcpkg-registery",
-      "baseline": "13c060d79697a920ea8e6598d40d98cf6d8788c4",
+      "baseline": "d6e439e20fc8f672ba410e9db38b76dd58b0c7ed",
       "packages": [ "reactivelitepp" ]
     }
   ]

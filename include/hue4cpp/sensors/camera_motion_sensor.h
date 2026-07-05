@@ -26,14 +26,14 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Whether motion is currently detected by the camera (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> CameraMotion{
+    ReactiveLitepp::ReadonlyProperty<bool> CameraMotion = MakeReadonlyProperty<&CameraMotionSensor::CameraMotion>(
         [this]() { return _motion; }
-    };
+    );
 
     /** @brief Whether the camera motion reading is valid (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> CameraMotionValid{
+    ReactiveLitepp::ReadonlyProperty<bool> CameraMotionValid = MakeReadonlyProperty<&CameraMotionSensor::CameraMotionValid>(
         [this]() { return _motion_valid; }
-    };
+        );
 
 	/** @brief Events fired when motion is detected or cleared */
     ReactiveLitepp::Event<> MotionDetected;

@@ -43,19 +43,17 @@ namespace hue4cpp {
 		/**
 		 * @brief Sensor unique identifier (read-only)
 		 */
-		ReactiveLitepp::ReadonlyProperty<std::string> Id{
+		ReactiveLitepp::ReadonlyProperty<std::string> Id = MakeReadonlyProperty<&Sensor::Id>(
 			[this]() { return _id; }
-		};
+		);
 
 		/**
 	     * @brief Get the sensor's owner identifier
 	     * @return Owner ID
 	     */
-		ReactiveLitepp::ReadonlyProperty<std::string> OwnerId{
-			[this]() {
-					return _ownerId;
-			}
-		};
+		ReactiveLitepp::ReadonlyProperty<std::string> OwnerId = MakeReadonlyProperty<&Sensor::OwnerId>(
+			[this]() { return _ownerId; }
+		);
 
 		/**
 		 * @brief Get or set the sensor's display name
@@ -67,7 +65,7 @@ namespace hue4cpp {
 		 * @throws BridgeNotReachableException if the bridge is not available
 		 * @throws AuthenticationException if not authenticated
 		 */
-		ReactiveLitepp::Property<std::string> Name{
+		ReactiveLitepp::Property<std::string> Name = MakeProperty<&Sensor::Name>(
 			[this]() { return _name; },
 			[this](std::string& value) {
 				try {
@@ -77,7 +75,7 @@ namespace hue4cpp {
 				}
 				catch (const HueException&) { throw; }
 			}
-		};
+		);
 
 		/**
 		 * @brief Compatibility helper – prefer the Id property for new code
@@ -94,9 +92,9 @@ namespace hue4cpp {
 		/**
 		 * @brief Whether the sensor is enabled on the bridge (reactive, read-only)
 		 */
-		ReactiveLitepp::ReadonlyProperty<bool> Enabled{
+		ReactiveLitepp::ReadonlyProperty<bool> Enabled = MakeReadonlyProperty<&Sensor::Enabled>(
 			[this]() { return _enabled; }
-		};
+		);
 
 		/**
 		 * @brief Check if sensor is enabled

@@ -294,8 +294,37 @@ int main() {
 		std::cout << "Monitoring sensor state changes (Press Ctrl+C to stop)...\n" << std::endl;
 
 		for (auto& button : button_sensors) {
-			button->PropertyChanged += [](ObservableObject& _, const PropertyChangeArgs& event) {
-				std::cout << "[" << getCurrentTime() << "] Button sensor property changed: " << event.PropertyName() << std::endl;
+			button->PropertyChanged += [](ObservableObject& obj, const PropertyChangeArgs& event) {
+				ButtonEvent btnEvent;
+				std::string str = "??";
+
+				try {
+					btnEvent = obj.GetProperty<ButtonEvent>(event.PropertyName()).value();
+
+					switch (btnEvent) {
+					case ButtonEvent::InitialPress:
+						str = "Initial Press";
+						break;
+					case ButtonEvent::ShortRelease:
+						str = "Short Release";
+						break;
+					case ButtonEvent::LongRelease:
+						str = "Long Release";
+						break;
+					case ButtonEvent::LongPress:
+						str = "LongPress";
+						break;
+					default:
+						str = "Unknown";
+						break;
+					}
+				}
+				catch (const std::exception& e) {
+					std::cerr << "Error retrieving button event: " << e.what() << std::endl;
+				}
+
+
+				std::cout << "[" << getCurrentTime() << "] Button sensor property changed: " << event.PropertyName() << " new state: " << str << std::endl;
 				};
 		}
 		auto& state_manager = bridge.getStateManager();

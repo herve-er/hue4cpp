@@ -26,14 +26,14 @@ public:
     void initFromJson(const nlohmann::json& json) override;
 
     /** @brief Current temperature in degrees Celsius (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<float> Temperature{
+    ReactiveLitepp::ReadonlyProperty<float> Temperature = MakeReadonlyProperty<&TemperatureSensor::Temperature>(
         [this]() { return _temperature; }
-    };
+    );
 
     /** @brief Whether the temperature reading is valid (reactive, read-only) */
-    ReactiveLitepp::ReadonlyProperty<bool> TemperatureValid{
+    ReactiveLitepp::ReadonlyProperty<bool> TemperatureValid = MakeReadonlyProperty<&TemperatureSensor::TemperatureValid>(
         [this]() { return _temperature_valid; }
-    };
+    );
 
 private:
     float _temperature       = 0.0f;

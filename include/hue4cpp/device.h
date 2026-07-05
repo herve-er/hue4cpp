@@ -63,30 +63,30 @@ namespace hue4cpp {
 		/**
 		 * @brief The device's unique identifier (read-only)
 		 */
-		ReadonlyProperty<std::string> Id{
+		ReadonlyProperty<std::string> Id = MakeReadonlyProperty<&Device::Id>(
 			[this]() { return _id; }
-		};
+		);
 
 		/**
 		 * @brief The resource type of the device (always "device") (read-only)
 		 */
-		ReadonlyProperty<std::string> Type{
+		ReadonlyProperty<std::string> Type = MakeReadonlyProperty<&Device::Type>(
 			[this]() { return _type; }
-		};
+		);
 
 		/**
 		 * @brief Human readable name given to the device (read-only)
 		 */
-		ReadonlyProperty<std::string> Name{
+		ReadonlyProperty<std::string> Name = MakeReadonlyProperty<&Device::Name>(
 			[this]() { return _name; }
-		};
+		);
 
 		/**
 		 * @brief Unique identification of the device model (read-only)
 		 */
-		ReadonlyProperty<std::string> ModelId{
+		ReadonlyProperty<std::string> ModelId = MakeReadonlyProperty<&Device::ModelId>(
 			[this]() { return _modelId; }
-		};
+		);
 
 		/**
 		 * @brief Name of the device manufacturer (read-only)
@@ -98,30 +98,30 @@ namespace hue4cpp {
 		/**
 		 * @brief Name of the product (read-only)
 		 */
-		ReadonlyProperty<std::string> ProductName{
+		ReadonlyProperty<std::string> ProductName = MakeReadonlyProperty<&Device::ProductName>(
 			[this]() { return _productName; }
-		};
+		);
 
 		/**
 		 * @brief Archetype of the product (read-only)
 		 */
-		ReadonlyProperty<std::string> ProductArchetype{
+		ReadonlyProperty<std::string> ProductArchetype = MakeReadonlyProperty<&Device::ProductArchetype>(
 			[this]() { return _productArchetype; }
-		};
+		);
 
 		/**
 		 * @brief Whether this device is Hue certified (read-only)
 		 */
-		ReadonlyProperty<bool> Certified{
+		ReadonlyProperty<bool> Certified = MakeReadonlyProperty<&Device::Certified>(
 			[this]() { return _certified; }
-		};
+		);
 
 		/**
 		 * @brief Software version of the product (read-only)
 		 */
-		ReadonlyProperty<std::string> SoftwareVersion{
+		ReadonlyProperty<std::string> SoftwareVersion = MakeReadonlyProperty<&Device::SoftwareVersion>(
 			[this]() { return _softwareVersion; }
-		};
+		);
 
 		/**
 		 * @brief Get the lights owned by this device
